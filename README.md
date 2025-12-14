@@ -1,4 +1,3 @@
-# soc-threat-detection-dashboard
 # 🚨 SOC Threat Detection Dashboard
 
 ## 📌 Project Overview
