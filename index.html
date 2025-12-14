@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOC Threat Detection Dashboard</title>
+    <style>
+        body {
+            background:#020617;
+            color:#e5e7eb;
+            font-family: Arial, sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .container {
+            width:500px;
+            border:1px solid #1e293b;
+            padding:20px;
+            border-radius:10px;
+        }
+        button {
+            width:100%;
+            padding:10px;
+            background:#22c55e;
+            border:none;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        .bar {
+            height:20px;
+            margin-bottom:10px;
+        }
+        .red { background:#7f1d1d; }
+        .green { background:#14532d; }
+        .alert {
+            background:#7f1d1d;
+            padding:10px;
+            border-radius:5px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🚨 SOC Threat Detection Dashboard</h2>
+
+    <button onclick="analyze()">Analyze Authentication Logs</button>
+
+    <div id="summary"></div>
+    <div id="alerts"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
